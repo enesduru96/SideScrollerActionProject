@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e6153ba61be3f4491199f87ee0e8ec, type: 3}
+  m_Name: CharacterProfile_Player
+  m_EditorClassIdentifier: 
+  CharacterIcon: {fileID: 0}
+  CharacterName: TestName
+  CharacterFaction: 0
+  animListNormalMovement: {fileID: 11400000, guid: c55a9e87bd0be594cb6e2eb165fa21ab, type: 2}
+  animListNormalMovementCombat: {fileID: 11400000, guid: f02d4b0e785ddfb48b395adb7c638e46, type: 2}
+  MaxHealth: 100
+  PoiseAmount: 100
+  baseArmour: 10
+  BaseAttackPower: 10
+  BaseAttackSpeed: 0
+  BaseArmorPenetration: 1
+  CanBeStunned: 1
+  CanBePushedBack: 1
+  CanBeKnockedDown: 1
+  CanBeLaunchedToAir: 1
+  EnrageOnLowHealth: 0
+  EnrageHealthThreshold: 0
+  HealthRegenPerSecond: 0
+  PoisonResistance: 0
+  BleedResistance: 0
+  FireResistance: 0
+  IceResistance: 0
+  MagicResistance: 0
+  StunResistance: 0
+  PushbackResistance: 0
+  PushbackForceReduction: 0
+  KnockdownResistance: 0
+  AirLaunchResistance: 0
+  CharacterHeight: 0
+  CharacterWidth: 0
+  CharacterMass: 0
+  CharacterDashVelocity: 0
+  CharacterDashDuration: 0
+  AvailableNotGroundedDashes: 0
+  WalkSpeed: 3
+  RunSpeed: 5
+  SprintSpeed: 7
+  CharacterJumpHeight: 1
+  AvailableAirJumps: 0
+  isSaved: 1
