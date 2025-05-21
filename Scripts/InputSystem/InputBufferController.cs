@@ -68,7 +68,7 @@ public class InputBufferController : MonoBehaviour
         inputBuffer.Enqueue(bufferedInput);
 
 #if UNITY_EDITOR
-        debugBuffer.Add(inputType);            // Inspector listesi
+        debugBuffer.Add(inputType);
 #endif
 
         lastFrameBuffered = Time.frameCount;
@@ -104,7 +104,6 @@ public class InputBufferController : MonoBehaviour
 
     public bool HasBufferedInput(BufferedInputType wantedType)
     {
-        // Süresi dolmuş girdileri baştan temizle
         while (inputBuffer.Count > 0)
         {
             var peek = inputBuffer.Peek();
@@ -113,7 +112,7 @@ public class InputBufferController : MonoBehaviour
                 PopFront();
                 continue;
             }
-            return peek.inputType == wantedType;   // baştaki eleman tür eşleşiyor mu?
+            return peek.inputType == wantedType;
         }
         return false;
     }
@@ -134,7 +133,7 @@ public class InputBufferController : MonoBehaviour
         inputBuffer.Dequeue();
 #if UNITY_EDITOR
         if (debugBuffer.Count > 0)
-            debugBuffer.RemoveAt(0);      // aynı sırada sil
+            debugBuffer.RemoveAt(0);
 #endif
     }
 }
